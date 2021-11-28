@@ -1,0 +1,52 @@
+.body_section_home_left {
+  width: 60vw;
+}
+
+.body_section_home_right {
+  width: calc(40vw - 20px);
+  vertical-align: top;
+}
+
+.welcome_image {
+  height: 300px;
+  background-image: url(images/uni_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome_paragraph {
+  padding: 20px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.news_box {
+  padding: 10px 20px 20px 20px;
+}
+
+.news_box_title {
+  line-height: 40px;
+  color: #600;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.news_item {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.news_item:hover {
+  background-color: #0002;
+}
+
+.news_title {
+  font-weight: 600;
+}
+
+.news_date {
+  color: #0007;
+  font-weight: 500;
+  font-size: 14px;
+}

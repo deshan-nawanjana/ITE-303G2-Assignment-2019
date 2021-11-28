@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration - University of Jaffna</title>
+    <link href="bin/main.css" rel="stylesheet" type="text/css">
+    <link href="bin/registration.css" rel="stylesheet" type="text/css">
+    <link href="bin/images/logo.png" rel="shortcut icon" type="image/png">
+    <script src="bin/registration.js" type="application/javascript"></script>
+  </head>
+  <body>
+    <!-- HEAD -->
+    <div class="head_section">
+      <!-- LOGO AND TITLE -->
+      <div class="header">
+        <div class="uni_crest"></div>
+        <div class="uni_title">University of Jaffna</div>
+      </div>
+      <!-- NAVIGATION BUTTONS -->
+      <div class="navbar">
+        <a href="index.htm">
+          <div class="navbar_button">Home</div>
+        </a>
+        <a href="about_us.htm">
+          <div class="navbar_button">About Us</div>
+        </a>
+        <a href="academic.htm">
+          <div class="navbar_button">Academic</div>
+        </a>
+        <a href="registration.htm">
+          <div class="navbar_button">Registration</div>
+        </a>
+      </div>
+    </div>
+    <!-- BODY -->
+    <div class="body">
+      <form action="submit.php" method="POST">
+        <div class="form_item">
+          <label>
+            <div class="form_label">Full Name</div>
+            <input type="text" name="fullname" maxlength="50" placeholder="Your Full Name" required />
+          </label>
+        </div>
+        <div class="form_item">
+          <label>
+            <div class="form_label">Address</div>
+            <input type="text" name="address" placeholder="House No, Street, Village, Ciy" required />
+          </label>
+        </div>
+        <div class="form_item">
+          <label>
+            <div class="form_label">Email</div>
+            <input type="email" name="email" pattern=".+@globex\.com" placeholder="username@example.com" required />
+          </label>
+        </div>
+        <div class="form_item">
+          <label>
+            <div class="form_label">Mobile Number</div>
+            <input type="text" name="mobile" pattern="[0-9]{10}" placeholder="0777123456" required />
+          </label>
+        </div>
+        <div class="form_item">
+          <label>
+            <div class="form_label">Date of Birth</div>
+            <input type="date" name="dob" value="1997-01-01" max="2001-12-31" required />
+          </label>
+        </div>
+        <div class="form_item">
+          <div class="form_label">Sex</div>
+          <label><input type="radio" name="sex" value="male">Male</label>
+          <label><input type="radio" name="sex" value="female">Female</label>
+        </div>
+        <div class="form_item">
+          <div class="form_label">Faculty</div>
+          <input list="faculties" name="faculty" id="faculty">
+          <datalist id="faculties">
+            <option value="Faculty #1">
+            <option value="Faculty #2">
+            <option value="Faculty #3">
+            <option value="Faculty #4">
+            <option value="Faculty #5">
+            <option value="Faculty #6">
+          </datalist>
+        </div>
+        <div class="form_item">
+          <label>
+            <div class="form_label">Photo</div>
+            <input type="file" accept=".jpg,.jpeg,.png,.bmp" required />
+          </label>
+        </div>
+        <div class="form_item">
+          <input type="submit" value="Submit Form" />
+        </div>
+      </form>
+    </div>
+    <!-- FOOT -->
+    <div>
+      <div class="foot_section">
+        <div class="motto_text">
+          To be a leading centre of excellence in teaching, learning, research and innovation, scholarship and community engagement
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
